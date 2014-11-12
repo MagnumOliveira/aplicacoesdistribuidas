@@ -215,13 +215,54 @@
 
 		<!-- Parte de Rodrigo -->
 		<section>
-			<h2>Point of View</h2>
-			<p>
-				Press <strong>ESC</strong> to enter the slide overview.
-			</p>
-			<p>
-				Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-			</p>
+			<section>
+				<h1>Protocolos usados pelo BitTorrent</h1>
+			</section>
+			<section>
+				<ul>
+					<li>DHT (Distributed Hash Table)</li>
+					<li>PEX (Peer Exchange)</li>
+					<li>Magnet Links</li>
+					<li>Protocolo µTP (uTP)</li>
+				</ul>
+			</section>>
+			<section>
+				<ul>
+					<h3>Protocolo DHT</h3>
+					<li>Trackerless.</li>
+					<li>Tabela de Hashs.</li>
+					<li>Informações de entrada passadas de peer para peer.</li>
+					<li>Trackers quase nunca usados.</li>
+				</ul>
+			</section>
+			<section>
+				<ul>
+					<h3>PEX (Peer Exchange)</h3>
+					<li>Faz os trackers trablahrem menos.</li>
+					<li>Algumas informações trocas diretamente pelos peers.</li>
+					<li>Peer pode informar a localização de outros computadores via DHT.</li>
+				</ul>				
+			</section>
+			<section>
+				<ul>
+					<h3>Magnet Links</h3>
+					<li>Alternativa ao .torrent.</li>
+					<li>Como suporta DHT e PEX é possível encontrar outros peers sem necessidade de trackers.</li>
+					<li>Muito usado pois é mais difícil associar à distribuição indevida de conteúdo.</li>
+					<li>Também usado por outros serviços além do BitTorrent.</li>
+					<img src="image/magnet.png" width="500" height="250" alt="Magnet">
+				</ul>				
+			</section>
+			<section>
+				<ul>
+					<h3>Protocolo uTP</h3>
+					<li>Consegue avaliar o impacto dos downloades via BitTorrent com a conexão do usuário.</li>
+					<li>Diminui a largura de banda caso o carregamento das páginas web estiver comprometido.</li>
+					<li>Possui alternativas para burlar o Traffic Shaping.</li>
+					<li>É oriundo do uTorrent.</li>
+					<img src="image/utorrent.png" width="500" height="250" alt="Magnet">
+				</ul>				
+			</section>
 		</section>
 
 
